@@ -23,7 +23,8 @@
             },
             {
                 "command": "extension.switchTo",
-                "title": "Switch"
+                "title": "Switch",
+                "key": "ctrl+cmd+s"
             }
         ]
     },
