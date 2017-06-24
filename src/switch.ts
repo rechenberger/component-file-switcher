@@ -21,7 +21,7 @@ export function switchTo(extension:string) {
         .then(
             document => {
                 vscode.commands.executeCommand("workbench.action.closeActiveEditor")
-                .then(() => vscode.window.showTextDocument(document))
+                    .then(() => vscode.window.showTextDocument(document))
             },
             err => null)
         // .then(console.log)
