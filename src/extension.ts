@@ -13,6 +13,13 @@ export function activate(context: vscode.ExtensionContext) {
         switchTo(ext)
     }))
 
+    disposables.push(vscode.commands.registerCommand('extension.switchTo', () => {
+        vscode.window.showQuickPick(fileExtensions)
+            .then(extension => {
+               switchTo(extension); 
+            });
+    }));
+
     context.subscriptions.push(...disposables)
 }
 
