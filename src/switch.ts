@@ -14,8 +14,11 @@ export function switchTo(extension:string) {
     const commonFilename = splits.join('.')
     const newFilename = commonFilename + '.' + extension
 
+    // Close Active Editor
+    vscode.commands.executeCommand("workbench.action.closeActiveEditor")
+
     // Open New Document
     vscode.workspace.openTextDocument(newFilename)
         .then(document => vscode.window.showTextDocument(document))
-        .then(console.log)
+        // .then(console.log)
 }
