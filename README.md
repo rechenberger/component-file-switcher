@@ -2,11 +2,11 @@
 
 ## Features
 
-Switches to corrosponding files with a diffrent extension.
+Switches to corresponding files with a different extension.
 
 For Example:
 - open `app.component.ts`
-- press `ctrl+cmd+s`
+- press `ctrl/cmd+s`
 - pick `html`
 - The extension opens `app.component.html`
 
